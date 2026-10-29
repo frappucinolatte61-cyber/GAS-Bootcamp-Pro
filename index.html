@@ -1,21 +1,234 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>GAS-Bootcamp Pro</title>
-  <link rel="stylesheet" href="/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GAS-Bootcamp Pro — Bootcamp Web Development Online dari Nol</title>
+<meta name="description" content="Belajar web development dari nol bersama GAS-Bootcamp Pro: HTML, CSS, JavaScript, backend Google Apps Script, deployment, dan cara mulai freelance. Akses selamanya.">
+<meta property="og:title" content="GAS-Bootcamp Pro — Bootcamp Web Development Online">
+<meta property="og:description" content="Dari nol sampai punya portofolio, siap kerja dan freelance. Belajar online, bayar sekali, akses selamanya.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0e1430">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%235b35e5'/%3E%3Ctext x='32' y='44' font-size='34' font-family='Arial' font-weight='800' fill='white' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/landing.css">
 </head>
 <body>
-  <div id="toast-region" class="toast-region" aria-live="polite"></div>
-  <main id="app" class="app-shell">
-    <section id="loading-screen" class="loading-screen">
-      <div class="brand-mark">G</div>
-      <div class="spinner"></div>
-      <p>Menyiapkan ruang belajarmu…</p>
-    </section>
-  </main>
-  <script src="/app.js"></script>
+<!-- CATATAN: seluruh testimoni, angka, nama mentor/klien, dan harga di halaman ini adalah DATA CONTOH (dummy).
+     Ganti dengan data asli sebelum dipublikasikan. Nomor WhatsApp diatur di landing.js (WA_NUMBER). -->
+<div class="announce">🚀 <b>Batch baru dibuka!</b> Harga early bird &amp; bonus mentoring | Kuota terbatas hanya <b>300 slot</b></div>
+<header class="nav">
+ <div class="wrap">
+  <a class="logo" href="/"><i>G</i>GAS-Bootcamp Pro</a>
+  <ul class="menu" id="menu">
+   <li><a href="#testimoni">Testimoni</a></li><li><a href="#kurikulum">Kurikulum</a></li><li><a href="#bonus">Bonus</a></li><li><a href="#mentor">Mentor</a></li><li><a href="#faq">FAQ</a></li>
+  </ul>
+  <div class="nav-cta">
+   <a class="btn btn-ghost hide-sm" href="/app">Login</a>
+   <a class="btn btn-lime" href="#join">Join Now</a>
+   <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">☰</button>
+  </div>
+ </div>
+</header>
+
+<section class="hero">
+ <div class="wrap">
+  <div class="hero-grid">
+   <div>
+    <span class="pill"><b>BARU</b> Bootcamp online, akses selamanya</span>
+    <h1>Kuasai <mark>Web Development</mark> dari Nol, Siap Kerja &amp; Freelance</h1>
+    <p class="lead">Belajar HTML, CSS, JavaScript, sampai bikin backend sendiri dengan Google Apps Script. Praktik langsung, punya portofolio nyata, dan dibimbing mentor.</p>
+    <div class="hero-cta">
+     <a class="btn btn-lime" href="#join">Gabung Sekarang →</a>
+     <a class="btn btn-ghost" href="#kurikulum">Lihat Kurikulum</a>
+    </div>
+    <div class="hero-points"><span>Tanpa langganan</span><span>Cocok untuk pemula</span><span>Project nyata</span></div>
+   </div>
+   <div style="position:relative">
+    <div class="code-card" aria-hidden="true">
+     <div class="code-top"><i></i><i></i><i></i><span>app.js</span></div>
+     <div class="code-body"><span class="c">// Panggil backend dari frontend</span>
+<span class="k">async function</span> <span class="f">loadCourses</span>() {
+  <span class="k">const</span> res = <span class="k">await</span> <span class="f">fetch</span>(<span class="s">'/api'</span>, {
+    method: <span class="s">'POST'</span>,
+    body: JSON.<span class="f">stringify</span>({
+      method: <span class="s">'getDashboard'</span>
+    })
+  });
+  <span class="k">return</span> res.<span class="f">json</span>();
+}</div>
+    </div>
+    <div class="float" style="left:-14px;bottom:-18px"><span>🏆</span> Project Selesai!</div>
+    <div class="float" style="right:-6px;top:-18px"><span>⚡</span> Deploy ke Vercel</div>
+   </div>
+  </div>
+  <div class="stats">
+   <div><b>1.500+</b><span>Peserta bergabung</span></div><div><b>150+</b><span>Video pembelajaran</span></div>
+   <div><b>50+</b><span>Template project</span></div><div><b>4,9/5</b><span>Rating kepuasan</span></div>
+  </div>
+ </div>
+</section>
+
+<div class="brands"><div class="wrap"><p>Peserta kami berkarya &amp; bekerja di berbagai perusahaan dan komunitas</p>
+ <div class="brand-row"><span>Cloudnesia</span><span>DevKita</span><span>PixelHub</span><span>KodeKopi</span><span>Nusabyte</span><span>Rumah Digital</span></div></div></div>
+
+<section id="testimoni"><div class="wrap">
+ <div class="sec-head"><span class="eyebrow">Stop jadi penonton</span><h2>Apa Kata Mereka?</h2><p>Sudah dibuktikan ribuan peserta yang mulai dari nol, sama seperti kamu.</p></div>
+ <div class="grid3">
+<article class="rv t-card"><span class="chip">Closing Project Rp 3 Juta</span><div class="stars" aria-label="5 dari 5">★★★★★</div><q>Awalnya cuma bisa HTML dasar. Setelah modul portofolio, saya berani tawarkan jasa landing page ke UMKM dan langsung closing.</q><div class="who"><span class="av" style="--a:#7a4bff;--b:#4524c8">DA</span><div><b>Dimas Aryo</b><small>Mahasiswa, Surabaya</small></div></div></article>
+<article class="rv t-card"><span class="chip">Diterima Magang Frontend</span><div class="stars" aria-label="5 dari 5">★★★★★</div><q>Project akhir dari bootcamp ini jadi portofolio utama saat interview. Reviewer bilang struktur kodenya rapi.</q><div class="who"><span class="av" style="--a:#ff6b57;--b:#e0457f">NP</span><div><b>Nadya Putri</b><small>Fresh graduate, Malang</small></div></div></article>
+<article class="rv t-card"><span class="chip">Deal Project Web Rp 5 Juta</span><div class="stars" aria-label="5 dari 5">★★★★★</div><q>Materi freelance-nya jujur dan praktis: cara menentukan harga, cara follow up klien. Bukan teori doang.</q><div class="who"><span class="av" style="--a:#18b88a;--b:#0f7f73">FR</span><div><b>Fikri Ramadhan</b><small>Karyawan, Sidoarjo</small></div></div></article>
+<article class="rv t-card"><span class="chip">Bikin Sistem Absensi Kantor</span><div class="stars" aria-label="5 dari 5">★★★★★</div><q>Belajar backend pakai Sheets itu pintu masuk yang ramah buat pemula. Dalam 2 minggu sistem absensi tim saya jalan.</q><div class="who"><span class="av" style="--a:#f5a623;--b:#e4572e">SA</span><div><b>Siti Aminah</b><small>Staf admin, Gresik</small></div></div></article>
+<article class="rv t-card"><span class="chip">Naik Jabatan Jadi Web Admin</span><div class="stars" aria-label="5 dari 5">★★★★★</div><q>Skill HTML/CSS/JS plus Apps Script bikin kerjaan di kantor lebih cepat. Atasan akhirnya percaya saya pegang website perusahaan.</q><div class="who"><span class="av" style="--a:#3b82f6;--b:#6d28d9">RW</span><div><b>Rendra Wijaya</b><small>Staf IT, Jakarta</small></div></div></article>
+<article class="rv t-card"><span class="chip">Closing Project Rp 2,5 Juta</span><div class="stars" aria-label="5 dari 5">★★★★★</div><q>Template dan code review-nya membantu banget. Saya jadi tahu kenapa tampilan web saya terlihat amatiran dan cara memperbaikinya.</q><div class="who"><span class="av" style="--a:#c9f23a;--b:#4aa84a">LA</span><div><b>Laras Ayu</b><small>Freelancer, Bandung</small></div></div></article>
+</div><p class="note">*Hasil setiap peserta berbeda-beda, tergantung usaha dan konsistensi masing-masing.</p></div></section>
+
+<section class="alt"><div class="wrap">
+ <div class="sec-head"><span class="eyebrow">Hasil karya peserta</span><h2>Emang Belajar dari Nol Bisa Bikin yang Bagus?</h2><p>Lihat contoh project yang dibuat peserta selama belajar. Semua dibangun dari template gratis.</p></div>
+ <div class="filters" role="tablist" aria-label="Filter project">
+  <button class="on" data-f="all">Semua</button><button data-f="landing">Landing Page</button><button data-f="toko">Toko Online</button><button data-f="company">Company Profile</button><button data-f="dashboard">Dashboard</button>
+ </div>
+ <div class="gallery" id="gallery">
+<figure class="shot" data-c="landing" style="--a:#7a4bff;--b:#4524c8;margin:0"><div class="bar"><i></i><i></i><i></i></div><div class="scr"><b></b><s></s><s></s><em></em></div><p>Landing Page</p></figure>
+<figure class="shot" data-c="toko" style="--a:#ff6b57;--b:#e0457f;margin:0"><div class="bar"><i></i><i></i><i></i></div><div class="scr"><b></b><s></s><s></s><em></em></div><p>Toko Online</p></figure>
+<figure class="shot" data-c="dashboard" style="--a:#3b82f6;--b:#1e3a8a;margin:0"><div class="bar"><i></i><i></i><i></i></div><div class="scr"><b></b><s></s><s></s><em></em></div><p>Dashboard Admin</p></figure>
+<figure class="shot" data-c="company" style="--a:#18b88a;--b:#0f7f73;margin:0"><div class="bar"><i></i><i></i><i></i></div><div class="scr"><b></b><s></s><s></s><em></em></div><p>Website Properti</p></figure>
+<figure class="shot" data-c="dashboard" style="--a:#f5a623;--b:#e4572e;margin:0"><div class="bar"><i></i><i></i><i></i></div><div class="scr"><b></b><s></s><s></s><em></em></div><p>Kelas Online</p></figure>
+<figure class="shot" data-c="landing" style="--a:#111827;--b:#4b5563;margin:0"><div class="bar"><i></i><i></i><i></i></div><div class="scr"><b></b><s></s><s></s><em></em></div><p>Portofolio</p></figure>
+<figure class="shot" data-c="company" style="--a:#0ea5e9;--b:#6366f1;margin:0"><div class="bar"><i></i><i></i><i></i></div><div class="scr"><b></b><s></s><s></s><em></em></div><p>Company Profile</p></figure>
+<figure class="shot" data-c="toko" style="--a:#c9f23a;--b:#4aa84a;margin:0"><div class="bar"><i></i><i></i><i></i></div><div class="scr"><b></b><s></s><s></s><em></em></div><p>Katalog Produk</p></figure>
+<figure class="shot" data-c="landing" style="--a:#ec4899;--b:#8b5cf6;margin:0"><div class="bar"><i></i><i></i><i></i></div><div class="scr"><b></b><s></s><s></s><em></em></div><p>Landing Page Event</p></figure>
+<figure class="shot" data-c="dashboard" style="--a:#14b8a6;--b:#0369a1;margin:0"><div class="bar"><i></i><i></i><i></i></div><div class="scr"><b></b><s></s><s></s><em></em></div><p>Sistem Kasir (POS)</p></figure>
+<figure class="shot" data-c="company" style="--a:#f97316;--b:#b91c1c;margin:0"><div class="bar"><i></i><i></i><i></i></div><div class="scr"><b></b><s></s><s></s><em></em></div><p>Website Restoran</p></figure>
+<figure class="shot" data-c="landing" style="--a:#a78bfa;--b:#f472b6;margin:0"><div class="bar"><i></i><i></i><i></i></div><div class="scr"><b></b><s></s><s></s><em></em></div><p>Undangan Digital</p></figure>
+</div></div></section>
+
+<section><div class="wrap"><div class="why">
+ <div class="why-grid">
+  <div><span class="eyebrow" style="background:rgba(255,255,255,.1);color:var(--lime)">Tanpa server mahal</span>
+   <h2>Kenapa Pakai Google Apps Script + Vercel?</h2>
+   <p class="sub">Kombinasi yang gratis, ringan, dan cukup kuat untuk membangun aplikasi sungguhan sebagai latihan maupun untuk klien kecil.</p></div>
+  <ul>
+   <li><b>Gratis untuk memulai</b><span>Tidak perlu beli hosting atau server. Cukup akun Google, GitHub, dan Vercel.</span></li>
+   <li><b>Database langsung di Google Sheets</b><span>Data mudah dilihat dan diedit, ideal untuk pemula dan bisnis kecil.</span></li>
+   <li><b>Online dalam hitungan menit</b><span>Push ke GitHub, Vercel otomatis deploy. Kamu bisa fokus belajar membangun fitur.</span></li>
+  </ul>
+ </div></div></div></section>
+
+<section class="alt"><div class="wrap">
+ <div class="sec-head"><span class="eyebrow">Testimonial</span><h2>Masih Belum Yakin?</h2><p>Coba dengar langsung dari peserta lain.</p></div>
+ <div class="chat-grid">
+<div class="chat rv"><header><span class="av" style="--a:#18b88a;--b:#0f7f73">BS</span><div><b>Bayu Setiawan</b><small>● online</small></div></header><div class="bub">Kak, saya baru banget ngoding. Beneran bisa ngikutin?</div><div class="bub me">Bisa! Modulnya disusun dari dasar, tinggal ikuti urutannya.</div><div class="bub">Oke, minggu ke-3 saya udah bisa bikin web portofolio sendiri 🔥</div></div>
+<div class="chat rv"><header><span class="av" style="--a:#f5a623;--b:#e4572e">CK</span><div><b>Citra Kirana</b><small>● online</small></div></header><div class="bub">Materi deploy-nya ngebantu banget, akhirnya web saya online!</div><div class="bub me">Mantap! Udah dicoba dibuka dari HP?</div><div class="bub">Udah kak, responsif semua. Makasih banyak!</div></div>
+<div class="chat rv"><header><span class="av" style="--a:#3b82f6;--b:#6d28d9">EP</span><div><b>Eko Prasetyo</b><small>● online</small></div></header><div class="bub">Live Q&amp;A-nya seru. Error saya dibedah sampai ketemu penyebabnya.</div><div class="bub me">Nah itu gunanya sesi Q&amp;A, jangan ragu tanya ya.</div></div>
+<div class="chat rv"><header><span class="av" style="--a:#c9f23a;--b:#4aa84a">FN</span><div><b>Farah Nabila</b><small>● online</small></div></header><div class="bub">Saya kira bootcamp online itu membosankan, ternyata materinya to the point.</div><div class="bub me">Senang dengarnya! Lanjut ke project akhir ya.</div><div class="bub">Siap, lagi garap dashboard kelas 😄</div></div>
+<div class="chat rv"><header><span class="av" style="--a:#7a4bff;--b:#4524c8">GP</span><div><b>Galih Pratama</b><small>● online</small></div></header><div class="bub">Komunitasnya aktif. Pertanyaan jam 11 malam pun ada yang jawab.</div></div>
+<div class="chat rv"><header><span class="av" style="--a:#ff6b57;--b:#e0457f">HS</span><div><b>Hana Safitri</b><small>● online</small></div></header><div class="bub">Dapat klien pertama dari templat proposal di bonus. Thanks!</div><div class="bub me">Selamat ya! Itu hasil kerja kamu sendiri 👏</div></div>
+</div></div></section>
+
+<section id="kurikulum"><div class="wrap">
+ <div class="sec-head"><span class="eyebrow">Belajar dari A sampai Z</span><h2>Kurikulum GAS-Bootcamp Pro</h2><p>Langkah demi langkah dari dasar sampai kamu punya portofolio dan siap menawarkan jasa.</p></div>
+ <div class="mods">
+<article class="mod rv"><div class="no">01</div><div><h3>Persiapan &amp; Tools Developer</h3><span class="vid">10+ video</span><p>Siapkan lingkungan kerja yang dipakai developer profesional, tanpa perlu laptop mahal.</p><ul><li>Setup VS Code &amp; ekstensi</li><li>Terminal dasar</li><li>Browser DevTools</li><li>Cara belajar efektif</li></ul></div></article>
+<article class="mod rv"><div class="no">02</div><div><h3>HTML &amp; CSS dari Nol</h3><span class="vid">28+ video</span><p>Bangun halaman web yang rapi dan responsif, dari struktur sampai animasi halus.</p><ul><li>HTML semantik</li><li>Flexbox &amp; Grid</li><li>Responsive design</li><li>Animasi &amp; transisi CSS</li></ul></div></article>
+<article class="mod rv"><div class="no">03</div><div><h3>JavaScript Esensial</h3><span class="vid">35+ video</span><p>Bikin halaman jadi hidup dan interaktif dengan JavaScript modern.</p><ul><li>DOM &amp; event</li><li>Array &amp; object</li><li>Fetch API &amp; async/await</li><li>Validasi form</li></ul></div></article>
+<article class="mod rv"><div class="no">04</div><div><h3>Bangun Website Nyata</h3><span class="vid">40+ video</span><p>Praktik langsung membuat berbagai jenis website yang dicari klien.</p><ul><li>Landing page</li><li>Website company profile</li><li>Toko online</li><li>Portofolio &amp; undangan digital</li></ul></div></article>
+<article class="mod rv"><div class="no">05</div><div><h3>Backend Praktis dengan Google Apps Script</h3><span class="vid">20+ video</span><p>Punya backend dan database tanpa server mahal, cukup Google Sheets.</p><ul><li>Membuat API dengan doPost</li><li>Login &amp; sesi pengguna</li><li>Google Sheets sebagai database</li><li>Hubungkan ke frontend di Vercel</li></ul></div></article>
+<article class="mod rv"><div class="no">06</div><div><h3>Git, GitHub &amp; Deployment</h3><span class="vid">10+ video</span><p>Simpan kode dengan aman dan online-kan project-mu dalam hitungan menit.</p><ul><li>Dasar Git &amp; commit</li><li>Push ke GitHub</li><li>Deploy ke Vercel</li><li>Domain &amp; environment variable</li></ul></div></article>
+<article class="mod rv"><div class="no">07</div><div><h3>UI/UX untuk Developer</h3><span class="vid">12+ video</span><p>Supaya hasil kodemu tidak hanya jalan, tapi juga enak dilihat dan dipakai.</p><ul><li>Tipografi &amp; warna</li><li>Layout &amp; spacing</li><li>Komponen UI konsisten</li><li>Aksesibilitas dasar</li></ul></div></article>
+<article class="mod rv"><div class="no">08</div><div><h3>Portofolio &amp; Mulai Freelance</h3><span class="vid">14+ video</span><p>Ubah skill jadi penghasilan atau pekerjaan pertamamu.</p><ul><li>Cara menyusun portofolio</li><li>Menentukan harga jasa</li><li>Cari klien &amp; negosiasi</li><li>Persiapan interview kerja</li></ul></div></article>
+<article class="mod rv"><div class="no">09</div><div><h3>Final Project &amp; Code Review</h3><span class="vid">8+ video</span><p>Satu project lengkap dari nol, direview langsung oleh mentor.</p><ul><li>Rencana &amp; wireframe</li><li>Bangun fitur inti</li><li>Review kode oleh mentor</li><li>Presentasi hasil akhir</li></ul></div></article>
+</div></div></section>
+
+<section class="alt"><div class="wrap">
+ <div class="sec-head"><span class="eyebrow">Progress peserta 🔥</span><h2>Hasil Action Mereka</h2></div>
+ <div class="prog">
+<div class="rv"><span class="av" style="--a:#7a4bff;--b:#4524c8">CR</span><div><b>Closing Rp 4,5 Juta</b><small>Dalam 3 minggu</small></div></div>
+<div class="rv"><span class="av" style="--a:#ff6b57;--b:#e0457f">DP</span><div><b>Deal Project Web Rp 3 Juta</b><small>Website UMKM</small></div></div>
+<div class="rv"><span class="av" style="--a:#18b88a;--b:#0f7f73">DM</span><div><b>Diterima Magang</b><small>Frontend developer</small></div></div>
+<div class="rv"><span class="av" style="--a:#f5a623;--b:#e4572e">CW</span><div><b>Closing Website Sekolah</b><small>Project komunitas</small></div></div>
+<div class="rv"><span class="av" style="--a:#3b82f6;--b:#6d28d9">DR</span><div><b>Deal Rp 2 Juta + Maintenance</b><small>Toko online</small></div></div>
+<div class="rv"><span class="av" style="--a:#c9f23a;--b:#4aa84a">DK</span><div><b>Dapat Klien Pertama</b><small>Modal laptop lama</small></div></div>
+</div><p class="note">*Contoh hasil peserta. Hasil dapat berbeda pada setiap orang.</p></div></section>
+
+<section id="bonus"><div class="wrap">
+ <div class="sec-head"><span class="eyebrow">Bukan cuma materi</span><h2>Bonus Spesial Hari Ini</h2><p>Dapatkan tambahan yang membantu kamu belajar lebih cepat dan lebih percaya diri.</p></div>
+ <div class="bonus">
+<article class="bn rv"><span class="tag">BONUS #01</span><h3>50+ Template Project</h3><p>Template landing page, toko online, dashboard, dan portofolio siap pakai untuk dipelajari dan dimodifikasi.</p><span class="val">Value: Rp 497.000</span></article>
+<article class="bn rv"><span class="tag">BONUS #02</span><h3>Live Q&amp;A Mingguan</h3><p>Tanya langsung ke mentor soal error, project, atau karier. Project-mu boleh dibedah di sesi live.</p><span class="val">Value: Rp 1.200.000/bln</span></article>
+<article class="bn rv"><span class="tag">BONUS #03</span><h3>Komunitas Eksklusif</h3><p>Grup diskusi bersama ratusan peserta lain untuk berbagi ilmu, kolaborasi, dan info proyek.</p><span class="val">Value: Rp 750.000/bln</span></article>
+<article class="bn rv"><span class="tag">BONUS #04</span><h3>Code Review Portofolio</h3><p>Kodemu dicek mentor dan diberi saran perbaikan konkret sebelum dipakai melamar atau menawarkan jasa.</p><span class="val">Value: Rp 600.000</span></article>
+<article class="bn rv"><span class="tag">BONUS #05</span><h3>E-book Cheatsheet</h3><p>Ringkasan HTML, CSS, dan JavaScript yang bisa dibuka cepat saat kamu lupa sintaks.</p><span class="val">Value: Rp 147.000</span></article>
+<article class="bn rv"><span class="tag">BONUS #06</span><h3>Template CV, Proposal &amp; Invoice</h3><p>Dokumen siap pakai untuk melamar kerja atau menawarkan jasa ke klien.</p><span class="val">Value: Rp 197.000</span></article>
+</div></div></section>
+
+<section class="alt" id="mentor"><div class="wrap">
+ <div class="sec-head"><span class="eyebrow">Yuk kenalan</span><h2>Mentor GAS-Bootcamp Pro</h2></div>
+ <div class="mentor">
+  <div class="m-photo" aria-hidden="true">R</div>
+  <div><h3>Rizky Adinata</h3><p class="handle">@rizkyngoding</p>
+   <ul><li>Full-stack developer dengan pengalaman 7+ tahun</li><li>Pernah menangani puluhan website dan sistem internal untuk UMKM &amp; perusahaan</li><li>Aktif mengajar dan mereview project peserta secara langsung</li></ul>
+   <a class="btn btn-primary" href="#join">Belajar Bersama Mentor</a></div>
+ </div>
+ <div class="clients">
+<div class="client rv"><b>Kopi Senja</b><small>Website Company Profile</small><p>Membantu pembuatan situs kafe dengan menu digital dan reservasi.</p></div>
+<div class="client rv"><b>Studio Rupa</b><small>Landing Page</small><p>Landing page pendaftaran kelas desain dengan form terhubung ke Sheets.</p></div>
+<div class="client rv"><b>Griya Asri</b><small>Website Properti</small><p>Katalog properti dengan filter sederhana dan tombol WhatsApp.</p></div>
+<div class="client rv"><b>Lentera Edu</b><small>Kelas Online</small><p>Platform belajar sederhana untuk bimbingan belajar lokal.</p></div>
+<div class="client rv"><b>Nusa Fashion</b><small>Toko Online</small><p>Katalog produk dan pesanan via WhatsApp untuk brand lokal.</p></div>
+<div class="client rv"><b>Bumi Trans</b><small>Sistem Internal</small><p>Dashboard pencatatan armada dan laporan harian berbasis Sheets.</p></div>
+</div></div></section>
+
+<section><div class="wrap">
+ <div class="sec-head"><span class="eyebrow">Apa kata mereka</span><h2>Setelah Belajar di GAS-Bootcamp Pro</h2></div>
+ <div class="car-wrap"><div class="car" id="car">
+<article class="t-card"><span class="chip">Closing Rp 5 Juta, 2 Hari</span><div class="who"><span class="av" style="--a:#ff6b57;--b:#e0457f">FR</span><div><b>Fikri R.</b><small>Alumni bootcamp</small></div></div></article>
+<article class="t-card"><span class="chip">Deal Project Web Rp 4 Juta</span><div class="who"><span class="av" style="--a:#18b88a;--b:#0f7f73">AS</span><div><b>Anita S.</b><small>Alumni bootcamp</small></div></div></article>
+<article class="t-card"><span class="chip">Closing Rp 2,5 Juta</span><div class="who"><span class="av" style="--a:#f5a623;--b:#e4572e">YP</span><div><b>Yoga P.</b><small>Alumni bootcamp</small></div></div></article>
+<article class="t-card"><span class="chip">Dapat Kerja Remote Pertama</span><div class="who"><span class="av" style="--a:#3b82f6;--b:#6d28d9">ML</span><div><b>Maya L.</b><small>Alumni bootcamp</small></div></div></article>
+<article class="t-card"><span class="chip">Closing Rp 3,5 Juta</span><div class="who"><span class="av" style="--a:#c9f23a;--b:#4aa84a">RK</span><div><b>Rio K.</b><small>Alumni bootcamp</small></div></div></article>
+<article class="t-card"><span class="chip">Deal Rp 6 Juta Web Sekolah</span><div class="who"><span class="av" style="--a:#7a4bff;--b:#4524c8">DA</span><div><b>Dewi A.</b><small>Alumni bootcamp</small></div></div></article>
+</div><div class="car-btns"><button id="prev" aria-label="Sebelumnya">←</button><button id="next" aria-label="Berikutnya">→</button></div></div>
+</div></section>
+
+<section class="price" id="join"><div class="wrap">
+ <div class="sec-head"><span class="eyebrow">Join now!</span><h2>Gabung Bersama GAS-Bootcamp Pro</h2><p>Bayar sekali, akses selamanya. Pilih paket yang paling sesuai tujuanmu.</p></div>
+ <div class="plans">
+<div class="plan"><h3>Basic</h3><p class="desc">Mulai belajar dari fondasi.</p><del>Rp 897.000</del><div class="amt">Rp 697.000</div><div class="per">/selamanya</div><ul><li>Modul HTML, CSS &amp; JavaScript</li><li>Praktik bikin website nyata</li><li>Git, GitHub &amp; Deployment</li><li>Bonus 20+ template project</li><li>Komunitas eksklusif</li><li class="dim">Backend Apps Script</li><li class="dim">Live Q&amp;A mingguan</li><li class="dim">Code review portofolio</li></ul><a class="btn btn-primary btn-block" href="#" data-wa="Basic">Join Basic</a></div>
+<div class="plan best"><span class="ribbon">🔥 BEST DEAL</span><h3>Ultimate</h3><p class="desc">Paket paling lengkap untuk siap kerja.</p><del>Rp 1.497.000</del><div class="amt">Rp 997.000</div><div class="per">/selamanya</div><ul><li>Semua materi Basic &amp; Pro</li><li>Backend Apps Script + Vercel</li><li>Final project + code review mentor</li><li>Live Q&amp;A mingguan</li><li>50+ template project premium</li><li>E-book cheatsheet &amp; template CV</li><li>Komunitas eksklusif</li><li>Akses &amp; update seumur hidup</li></ul><a class="btn btn-lime btn-block" href="#" data-wa="Ultimate">Join Ultimate</a></div>
+<div class="plan"><h3>Pro</h3><p class="desc">Tambah backend dan freelance.</p><del>Rp 1.197.000</del><div class="amt">Rp 847.000</div><div class="per">/selamanya</div><ul><li>Semua materi Basic</li><li>Backend Apps Script + Vercel</li><li>Portofolio &amp; mulai freelance</li><li>Live Q&amp;A mingguan</li><li>Bonus 50+ template project</li><li>Komunitas eksklusif</li><li class="dim">Final project + code review</li><li class="dim">E-book cheatsheet &amp; template CV</li></ul><a class="btn btn-primary btn-block" href="#" data-wa="Pro">Join Pro</a></div>
+</div><p class="note" style="color:#9ba3cc">Harga &amp; kuota promo dapat berubah sewaktu-waktu.</p></div></section>
+
+<section id="faq"><div class="wrap">
+ <div class="sec-head"><span class="eyebrow">FAQ</span><h2>Pertanyaan yang Sering Ditanyakan</h2><p>Mungkin pertanyaanmu sudah terjawab di sini.</p></div>
+ <div class="faq">
+<details><summary>Saya belum pernah ngoding. Tetap bisa ikut?</summary><p>Bisa. Materi dimulai dari dasar dan disusun bertahap, jadi cukup ikuti urutan modulnya. Yang penting kamu konsisten belajar.</p></details>
+<details><summary>Bagaimana sistem belajarnya?</summary><p>Semua online. Setelah bergabung kamu langsung dapat akun untuk mengakses video materi, bonus, dan komunitas, lalu belajar kapan saja dan di mana saja.</p></details>
+<details><summary>Apakah ada biaya langganan bulanan?</summary><p>Tidak. Kamu membayar sekali dan mendapat akses selamanya, termasuk update materi di kemudian hari.</p></details>
+<details><summary>Apakah ada garansi pasti dapat kerja atau penghasilan?</summary><p>Tidak ada janji hasil pasti karena hasil tiap orang berbeda, tergantung usaha dan konsistensi. Yang kami jamin adalah materi dan pendampingan terbaik.</p></details>
+<details><summary>Perlu laptop dengan spek tinggi?</summary><p>Tidak. Laptop biasa dengan browser yang lancar dan koneksi internet sudah cukup untuk mengikuti seluruh materi.</p></details>
+<details><summary>Apakah harus punya modal atau hosting dulu?</summary><p>Tidak. Kita memakai layanan gratis seperti GitHub, Vercel, dan Google Apps Script untuk belajar dan deploy project.</p></details>
+<details><summary>Ada komunitas untuk diskusi?</summary><p>Ada. Kamu bisa tanya jawab, berbagi progres, dan networking dengan peserta lain di grup komunitas.</p></details>
+<details><summary>Bagaimana cara mendaftar?</summary><p>Pilih paket di bagian harga lalu klik tombol Join. Kamu akan diarahkan ke WhatsApp admin untuk konfirmasi pembayaran dan pembuatan akun.</p></details>
+</div></div></section>
+
+<section style="padding-top:0"><div class="wrap"><div class="final">
+ <h2>Mulai Hari Ini, Punya Skill yang Dicari Banyak Orang</h2>
+ <p>Satu langkah kecil sekarang lebih baik daripada menunggu waktu yang sempurna.</p>
+ <a class="btn btn-lime" href="#join">Amankan Slot-mu →</a>
+</div></div></section>
+
+<footer><div class="wrap">
+ <div class="foot">
+  <div><a class="logo" href="/"><i>G</i>GAS-Bootcamp Pro</a><p>Platform edukasi web development online untuk kebutuhan karier maupun skill freelance.</p></div>
+  <div><h4>MENU</h4><ul><li><a href="#testimoni">Testimoni</a></li><li><a href="#kurikulum">Kurikulum</a></li><li><a href="#bonus">Bonus</a></li><li><a href="#mentor">Mentor</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+  <div><h4>LAINNYA</h4><ul><li><a href="/app">Login Member</a></li><li><a href="#" data-wa="Tanya admin">WhatsApp</a></li><li><a href="#join">Daftar Paket</a></li></ul></div>
+ </div>
+ <div class="copy">© 2026 GAS-Bootcamp Pro. All rights reserved.</div>
+</div></footer>
+<a class="wa-float" href="#" data-wa="Tanya admin" aria-label="Chat WhatsApp">💬</a>
+<script src="/landing.js"></script>
 </body>
 </html>
